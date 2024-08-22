@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/image_widget.dart';
+import 'package:myapp/scaffold_widget.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -18,31 +19,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: MyHomePage(title: 'MyApp'),
+      home: ScaffoldWidget(title: 'Update Berita Bola'),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key? key, required this.title}) : super(key: key);
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title, style: TextStyle(color: Colors.white)),
-        backgroundColor: Colors.red,
-      ),
-      body: 
-      Scrollbar(
-      child :ImageWidget()
-    )
-    );
-  }
-}
