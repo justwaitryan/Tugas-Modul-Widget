@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/dialog_widget.dart';
+import 'package:myapp/card_widget.dart';
 
 class ImageWidget extends StatelessWidget {
   const ImageWidget({super.key});
@@ -66,7 +66,7 @@ class ImageWidget extends StatelessWidget {
             ),
 
           ),
-          DialogWidget()
+          CardWidget()
         ],
       ),
     );
